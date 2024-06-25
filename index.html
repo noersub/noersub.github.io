@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contoh Memanggil JavaScript</title>
+    <title>Bitcoin Price Tracker Future/Spot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        #message-container p {
+            white-space: pre-wrap; /* Memastikan whitespace seperti \n ditampilkan sebagai baris baru */
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Harga Bitcoin</h1>
-    <p id="bitcoin-price">Loading...</p>
-
-    <!-- Memanggil file JavaScript -->
-    <script src="Jawa/bete.js"></script>
+    <div class="container">
+        <h1>Bitcoin Price Tracker</h1>
+        <div id="bitcoin-price">Harga Bitcoin saat ini: Memuat...</div>
+        <div id="update-time">Diperbarui pada: Memuat...</div>
+        <div id="message-container"></div>
+    </div>
+    <script type="module" src="bantuan/setupcrs.js"></script>
+    <script type="module" src="bantuan/setupcoinbasesg.js"></script>
 </body>
 </html>
